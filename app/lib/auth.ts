@@ -2,7 +2,7 @@ import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { createAuthMiddleware } from "better-auth/plugins";
 
-import db from "./db/indext";
+import db from "./db";
 import env from "./env";
 
 export const auth = betterAuth({

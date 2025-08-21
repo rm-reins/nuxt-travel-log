@@ -19,6 +19,17 @@ export default withNuxt(
     },
     {
       rules: {
+        "vue/max-attributes-per-line": [
+          "error",
+          {
+            singleline: {
+              max: 4,
+            },
+            multiline: {
+              max: 1,
+            },
+          },
+        ],
         "ts/consistent-type-definitions": ["error", "type"],
         "no-console": "warn",
         "antfu/no-top-level-await": "off",

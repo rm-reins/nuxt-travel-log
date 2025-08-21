@@ -12,11 +12,15 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxtjs/color-mode",
     "@pinia/nuxt",
+    "@vee-validate/nuxt",
   ],
   eslint: {
     config: {
       standalone: false,
     },
+  },
+  veeValidate: {
+    autoImports: true,
   },
   vite: { plugins: [tailwindcss()] },
   colorMode: { dataValue: "theme" },

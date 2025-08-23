@@ -11,13 +11,13 @@ const route = useRoute();
 
 <template>
   <div class="tooltip-right" :data-tip="showLabel ? undefined : props.label" :class="{ tooltip: !showLabel }">
-    <Navlink :to="props.href" :class="{ 'bg-base-200': route.path === props.href, 'justify-center': !showLabel, 'justify-start': showLabel }" class="flex gap-2 btn p-2 bg-base-300 hover:cursor-pointer flex-nowrap">
+    <NuxtLink :to="props.href" :class="{ 'bg-base-200': route.path === props.href, 'justify-center': !showLabel, 'justify-start': showLabel }" class="flex gap-2 btn p-2 bg-base-300 hover:cursor-pointer flex-nowrap">
       <Icon :name="props.icon" size="24" />
 
       <Transition name="grow">
         <span v-if="showLabel">{{ props.label }}</span>
       </Transition>
-    </Navlink>
+    </NuxtLink>
   </div>
 </template>
 

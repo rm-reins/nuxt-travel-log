@@ -13,9 +13,9 @@ const authStore = useAuthStore();
           Keep track of your travels and adventures with this simple trave log app.
         </p>
         <AuthButton v-if="!authStore.user" />
-        <Navlink v-else to="/dashboard" class="btn btn-primary">
+        <NuxtLink v-else to="/dashboard" class="btn btn-primary">
           Start Logging
-        </Navlink>
+        </NuxtLink>
       </div>
     </div>
   </div>
